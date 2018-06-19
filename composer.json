@@ -1,0 +1,51 @@
+{
+  "name": "balazscsaba2006/sharedcount",
+  "description": "SharedCount integration into Craft CMS 3.",
+  "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "shared count",
+    "sharedcount"
+  ],
+  "support": {
+    "email": "csaba.balazs@humandirect.eu",
+    "issues": "https://github.com/balazscsaba2006/craft3-sharedcount/issues?state=open",
+    "source": "https://github.com/balazscsaba2006/craft3-sharedcount",
+    "docs": "https://github.com/balazscsaba2006/craft3-sharedcount"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Human Direct",
+      "homepage": "https://humandirect.eu"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "humandirect\\sharedcount\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "SharecCount",
+    "handle": "sharedcount",
+    "hasCpSettings": true,
+    "hasCpSection": false,
+    "changelogUrl": "https://raw.githubusercontent.com/balazscsaba2006/craft3-sharedcount/master/CHANGELOG.md",
+    "class": "humandirect\\sharedcount\\SharedCount",
+    "components": {
+      "services": "humandirect\\sharedcount\\services\\SharedCountService"
+    }
+  }
+}
